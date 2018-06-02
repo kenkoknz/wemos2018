@@ -1,0 +1,67 @@
+// update thingspeak with min wifi connect
+#include "ESP8266WiFi.h"
+#include "ThingSpeak.h"
+
+//-----------------------
+// WiFi parameters to be configured
+//const char* ssid = "hg566";
+//const char* password = "hg888888";
+//const char* ssid = "SKINNY-B315-BF9B";
+//const char* password = "4RRJBLJ3MB9";
+
+const char* ssid = "EAL Public";
+const char* password = "4rfVbgT5!";
+//------------------
+const char* server= "api.thingspeak.com";
+
+WiFiClient client;
+unsigned long myChannelNumber =505950;
+const char * myWriteAPIKey = "YDP1CY95P8AEKDHP";
+
+
+void setup(void)
+{ 
+
+  //-----------wifi connection bit----------------
+  pinMode(13, OUTPUT);
+  Serial.begin(115200);
+  // Connect to WiFi
+  WiFi.begin(ssid, password);
+
+
+delay(3000); //delay to see monitor
+  //while wifi not connected print ... till connected 
+  // then after it connected, get out of the loop
+  while (WiFi.status() != WL_CONNECTED) {
+     delay(500);
+     Serial.print(WiFi.status());
+     Serial.print(".");// while wifi not connected yet, print '.'
+  }
+  
+  Serial.println("");//print a new line, then print WiFi connected and the IP address
+  Serial.println("WiFi connected");Serial.print(WiFi.status());
+  digitalWrite(13, HIGH); //light to show wifi connected    
+  Serial.println(WiFi.localIP());// Print the IP address
+//----------------------------------------
+
+ThingSpeak.begin(client);
+
+
+}
+void loop() {
+  // Nothing
+
+float sensorValue = analogRead(A0);
+ 
+ThingSpeak.writeField(myChannelNumber,1, sensorValue, myWriteAPIKey);
+ Serial.println("A0");
+  Serial.println(sensorValue);
+  delay(20000); // ThingSpeak will only accept updates every 15 seconds.
+
+
+
+  
+}
+
+
+
