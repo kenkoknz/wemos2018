@@ -12,23 +12,40 @@ They are 3 basic methods to use Wemos. AT commands, LUA programming language wit
 Specification:
 
 Embeded ESP8266-12F with PCB antena
+
 Flash: 4MB
+
 Wi-Fi in standard 802.11 b/g/n
+
 WiFi modes: AP (Access Point), STA (Standalone), AP+STA
+
 Supports TKIP, WEP, CRC, CCMP, WPA/WPA2, WPS
+
 Supply voltage: 3.3V (or 5V via USB)
+
 CPU: RISC 80MHz (supports up to 160MHz)
+
 9 GPIO - PWM / I2C / SPI / 1-Wire
+
 Max current on I/O pins: 12mA
+
 Recommended current on I/O pins: 6mA
+
 USB-UART converter - CH340
+
 ADC - 10-bit
+
 16 pins in 2,54mm raster - breadboard compatible
+
 micro USB B
+
 Size: 34 x 25mm
+
 LED connected to GPIO2 (D4); 
 note to activate onboard blue led:
+
  pinMode(2,OUTPUT); // gpio 2 or d4 wemos onboard blue light
+ 
  digitalWrite(2,HIGH); // HIGH is off
  
  
