@@ -1,11 +1,11 @@
 # wemos2018
-Wemos d1 mini v2 purchased from Webtec 7.99; djmc485 6.80
-ESP8266 is a very popular WiFi enabled microcontroller. However bare ESP8266 requires stable power supply, and sophisticated programming method, gnd p0 for prog mode. 
-Wemos D1 mini is very similar to NodeMCU module. The main difference is size. Wemos D1 is smaller, and have newer version of wifi module - 12F. More stable and with a better range. all the psu and can be program vie the usb port directly.
+Wemos d1 mini v2, May2018; Webtec 7.99; djmc485 6.80
+Stand alone ESP8266 requires 3.3v power supply, and programming method ie gnd p0 for prog mode. 
+Wemos D1 mini is similar to NodeMCU module, smaller, and have newer version of wifi module-12F. More stable and with a better range.  and can be program and powered directly from the usb port.
 
-Wemos D1 module it's a small board with ESP8266-12F. On board there is also USB-UART converter (popular CH340). so all you need to start programming is simple USB cable.
+Wemos D1 module is populated with ESP8266-12F. On board there is also USB-UART converter (popular CH340). for usb programming.
 
-Wemos D1 provides 9 GPIO ports with PWM, I2C, SPI and 1-Wire support. Thanks to 3.3V LDO module can be powered directly from USB port via microUSB power supply.
+Wemos D1 has 9 GPIO ports with PWM, I2C, SPI and 1-Wire support. The 3.3V LDO module can be powered directly from USB port.
 
 They are 3 basic methods to use Wemos. AT commands, LUA programming language with NodeMCU firmware and simplest is with Arduino IDE.
 
