@@ -1,5 +1,5 @@
 # wemos2018
-wemos d1 mini v2 purchased from webtec 7.99
+Wemos d1 mini v2 purchased from Webtec 7.99; djmc485 6.80
 ESP8266 is a very popular WiFi enabled microcontroller. However bare ESP8266 requires stable power supply, and sophisticated programming method, gnd p0 for prog mode. 
 Wemos D1 mini is very similar to NodeMCU module. The main difference is size. Wemos D1 is smaller, and have newer version of wifi module - 12F. More stable and with a better range. all the psu and can be program vie the usb port directly.
 
