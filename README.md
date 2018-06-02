@@ -1,6 +1,7 @@
 # wemos2018
 Wemos d1 mini v2, May2018; Webtec 7.99; djmc485 6.80
-Stand alone ESP8266 requires 3.3v power supply, and programming method ie gnd p0 for prog mode. 
+
+
 Wemos D1 mini is similar to NodeMCU module, smaller, and have newer version of wifi module-12F. More stable and with a better range.  and can be program and powered directly from the usb port.
 
 Wemos D1 module is populated with ESP8266-12F. On board there is also USB-UART converter (popular CH340). for usb programming.
