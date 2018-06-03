@@ -50,3 +50,4 @@ note to activate onboard blue led:
  digitalWrite(2,HIGH); // HIGH is off
  
  
+wemos  examples: https://github.com/wemos/D1_mini_Examples/tree/master/examples/01.Basics
