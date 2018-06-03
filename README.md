@@ -67,3 +67,8 @@ WL_DISCONNECTED = 6\
 builtin led: 
 https://piandmore.wordpress.com/2016/10/10/esp-internal-led/
 
+
+oled:\
+https://automatedhome.party/2017/04/17/connect-an-inexpensive-oled-display-to-a-esp8266wemos-d1-mini/
+
+
