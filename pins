@@ -1,5 +1,9 @@
 https://wiki.wemos.cc/products:d1:d1_mini
 
+for mosi:	
+Note: CLK=GPIO-14 (D5), MISO=GPIO-12 (D6), MOSI=GPIO-13 (D7)
+*do not use gpio9
+
 in	Function	ESP-8266 Pin
 TX	TXD	TXD gpio1
 RX	RXD	RXD gpio3
